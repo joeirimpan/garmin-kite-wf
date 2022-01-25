@@ -814,9 +814,11 @@ class BasicView extends Ui.WatchFace {
       // let's start our animation loop
       is_animating = true;
 
+      Ui.requestUpdate();
+
       // let's start our animation loop
-      timer1 = new Timer.Timer();
-      timer1.start(method(:callback_animate), timer_steps, false );
+      // timer1 = new Timer.Timer();
+      // timer1.start(method(:callback_animate), timer_steps, false );
 
     }
 
