@@ -3,4 +3,5 @@ project.manifest = manifest.xml
 
 # round-240x240.resourcePath = $(base.resourcePath)
 # round-260x260.resourcePath = $(base.resourcePath);resources-round-260x260
-# round-280x280.resourcePath = $(base.resourcePath);resources-round-280x280
+round-454x454.resourcePath = $(base.resourcePath);resources-round-416x416
+rectangle-320x360.resourcePath = $(base.resourcePath);resources-round-416x416

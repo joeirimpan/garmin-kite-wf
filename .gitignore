@@ -5,6 +5,9 @@ coverage
 
 # production
 build
+prg
+bin
+
 
 # misc
 .DS_Store
@@ -16,3 +19,4 @@ release.sh
 *.iq
 *.debug.xml
 *-settings.json
+prg

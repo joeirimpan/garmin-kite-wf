@@ -287,26 +287,69 @@ class BasicView extends Ui.WatchFace {
 
       if (canvas_rect) {
 
-        y_offset_nyan = 35;
-        s_offset_time = 70;
-        s_yoffset_batt = 8;
-        s_xoffset_batt = canvas_w - 20;
+        switch(canvas_w) {
+
+          case 448:
+            sq_size = 6;
+            y_offset_nyan = 65;
+            s_offset_time = 190;
+            s_offset_date = 80;
+            s_yoffset_batt = 25;
+            s_xoffset_batt = canvas_w /2;
+            hasOLED = true;
+          break;
+
+          case 320:
+            sq_size = 6;
+            y_offset_nyan = 55;
+            s_offset_time = 160;
+            s_offset_date = 80;
+            s_yoffset_batt = 20;
+            s_xoffset_batt = canvas_w /2;
+            hasOLED = true;
+          break;
+
+          case 240:
+            sq_size = 5;
+            y_offset_nyan = 30;
+            s_offset_time = 80;
+            s_yoffset_batt = 14;
+            s_xoffset_batt = canvas_w /2;
+          break;
+
+          default:
+            y_offset_nyan = 35;
+            s_offset_time = 70;
+            s_yoffset_batt = 8;
+            s_xoffset_batt = canvas_w - 20;
+          break;
+        }
 
       }
 
-      if (canvas_rect && hasOLED) {
+      // if (canvas_rect && hasOLED) {
 
-        sq_size = 5;
-        y_offset_nyan = 30;
-        s_offset_time = 80;
-        s_yoffset_batt = 14;
-        s_xoffset_batt = canvas_w /2;
+      //       sq_size = 5;
+      //       y_offset_nyan = 30;
+      //       s_offset_time = 80;
+      //       s_yoffset_batt = 14;
+      //       s_xoffset_batt = canvas_w /2;
 
-      }
+      // }
 
       if (canvas_circ) {
 
         switch(canvas_w) {
+
+          case 454:
+            sq_size = 6;
+            y_offset_nyan = 65;
+            s_offset_time = 190;
+            s_offset_date = 80;
+            s_yoffset_batt = 25;
+            s_xoffset_batt = canvas_w /2;
+            hasOLED = true;
+          break;
 
           case 416:
             sq_size = 6;
@@ -329,6 +372,16 @@ class BasicView extends Ui.WatchFace {
           break;
 
           case 360:
+            sq_size = 6;
+            y_offset_nyan = 55;
+            s_offset_time = 160;
+            s_offset_date = 80;
+            s_yoffset_batt = 20;
+            s_xoffset_batt = canvas_w /2;
+            hasOLED = true;
+          break;
+
+          case 320:
             sq_size = 6;
             y_offset_nyan = 55;
             s_offset_time = 160;
@@ -453,8 +506,8 @@ class BasicView extends Ui.WatchFace {
         b_nyan_tail = [b_nyan_tail_1,b_nyan_tail_2,b_nyan_tail_3,b_nyan_tail_4,b_nyan_tail_5,b_nyan_tail_6];
 
         if (canvas_semicirc) {
-          b_rainbow = Ui.loadResource(Rez.Drawables.rainbow_fr);
-          b_rainbow_bt = Ui.loadResource(Rez.Drawables.rainbow_bt_fr);
+          // b_rainbow = Ui.loadResource(Rez.Drawables.rainbow_fr);
+          // b_rainbow_bt = Ui.loadResource(Rez.Drawables.rainbow_bt_fr);
         } else {
           b_rainbow = Ui.loadResource(Rez.Drawables.rainbow);
           b_rainbow_bt = Ui.loadResource(Rez.Drawables.rainbow_bt);
