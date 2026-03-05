@@ -628,7 +628,7 @@ class BasicView extends Ui.WatchFace {
       }
 
       // clear the screen
-      dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_DK_BLUE);
+      dc.setColor(0x1B1B28, 0x1B1B28);
 
       // do we need to clear the screen?
       dc.clear();
@@ -737,7 +737,7 @@ class BasicView extends Ui.WatchFace {
       // --------------------
 
       // let's reset the colour to our background colour
-      dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_DK_BLUE);
+      dc.setColor(0x1B1B28, 0x1B1B28);
 
       // let's clip and clear the pervious star rendered to the dc
       if (do1hz) {

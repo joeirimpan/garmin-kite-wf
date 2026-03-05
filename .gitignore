@@ -13,10 +13,15 @@ bin
 .DS_Store
 .env
 old
-build.sh
 release.sh
 *.prg
 *.iq
 *.debug.xml
 *-settings.json
 prg
+
+# build artifacts
+developer_key.der
+developer_key.pem
+manifest-build.xml
+monkey-build.jungle
